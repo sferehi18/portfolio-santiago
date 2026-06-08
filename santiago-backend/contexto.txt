@@ -1,0 +1,140 @@
+Objetivo profesional:
+Santiago Fernández Ehimatie busca oportunidades como Desarrollador Full Stack, Desarrollador Backend, Ingeniero de Software Junior o Especialista Junior en Inteligencia Artificial y Big Data.
+
+Fortalezas principales:
+
+* Desarrollo Full Stack con Java Spring Boot y React.
+* Desarrollo de APIs REST.
+* Diseño y gestión de bases de datos relacionales.
+* Inteligencia Artificial y Machine Learning.
+* Automatización de procesos con Python y n8n.
+* Cloud Computing con AWS.
+* Trabajo colaborativo mediante Git y GitHub.
+* Capacidad de aprendizaje rápido y adaptación tecnológica.
+
+Tecnologías destacadas:
+Java, Spring Boot, React, JavaScript, Python, PHP, Laravel, MySQL, PostgreSQL, AWS, Git, GitHub, JWT, HTML5, CSS3.
+
+Idiomas:
+
+* Español: Nativo.
+* Inglés: Intermedio/Avanzado.
+
+Disponibilidad:
+
+* Incorporación inmediata.
+* Permiso de conducir B.
+* Residencia en Algeciras (Cádiz).
+Santiago Fernández Ehimatie es un desarrollador Full Stack Junior especializado en Inteligencia Artificial y Big Data. Reside en Algeciras (Cádiz) y cuenta con disponibilidad inmediata para incorporarse a proyectos tecnológicos.
+
+Perfil profesional:
+
+Está especializado en el desarrollo de aplicaciones web modernas utilizando arquitecturas Full Stack. Posee experiencia práctica desarrollando frontend con React y backend con Java Spring Boot, PHP Laravel y Python.
+
+Su principal interés profesional se centra en:
+
+* Desarrollo Backend.
+* Desarrollo Full Stack.
+* Inteligencia Artificial.
+* Machine Learning.
+* Big Data.
+* Automatización de procesos.
+* Cloud Computing con AWS.
+
+Experiencia profesional:
+
+Desarrollador Web en prácticas en Baleària (03/2025 - 06/2025)
+
+Responsabilidades principales:
+
+* Desarrollo y mantenimiento de aplicaciones corporativas.
+* Implementación de nuevas funcionalidades frontend en React.
+* Desarrollo de servicios backend con Spring Boot y Laravel.
+* Integración y optimización de bases de datos relacionales.
+* Resolución de incidencias mediante debugging.
+* Trabajo colaborativo mediante Git y GitHub.
+
+Tecnologías principales:
+
+Backend:
+
+* Java
+* Spring Boot
+* PHP
+* Laravel
+* Python
+* C++
+
+Frontend:
+
+* React.js
+* JavaScript
+* HTML5
+* CSS3
+
+Bases de datos:
+
+* MySQL
+* PostgreSQL
+
+Cloud y DevOps:
+
+* AWS
+* Git
+* GitHub
+
+Inteligencia Artificial y Datos:
+
+* Python
+* Machine Learning
+* Big Data
+* Jupyter Notebook
+* R
+* n8n
+
+Proyecto destacado:
+
+Plataforma de gestión de contenidos educativos.
+
+Objetivo:
+Gestionar asignaturas, temas y recursos educativos mediante una arquitectura Full Stack.
+
+Tecnologías:
+
+* Java Spring Boot
+* React.js
+* JWT
+* MySQL
+
+Funciones:
+
+* Autenticación segura mediante JWT.
+* Operaciones CRUD completas.
+* Gestión de archivos.
+* API REST.
+* Base de datos relacional.
+
+Fortalezas profesionales:
+
+* Aprendizaje rápido.
+* Adaptación a nuevas tecnologías.
+* Resolución de problemas.
+* Trabajo en equipo.
+* Capacidad analítica.
+* Orientación a resultados.
+
+Idiomas:
+
+* Español: Nativo.
+* Inglés: Intermedio/Avanzado.
+
+Disponibilidad:
+
+* Incorporación inmediata.
+* Permiso de conducir B.
+
+Contacto:
+
+Correo: [Sferehi18@gmail.com](mailto:Sferehi18@gmail.com)
+GitHub: github.com/Sferehi18
+LinkedIn: linkedin.com/in/Sferehi18

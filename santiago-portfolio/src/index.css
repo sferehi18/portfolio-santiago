@@ -1,0 +1,20 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  /* Colores de marca centralizados */
+  --color-brand-primary: var(--color-indigo-600);
+  --color-brand-hover: var(--color-indigo-700);
+  --color-brand-focus: var(--color-indigo-500);
+  
+  /* Fondos principales del sitio */
+  --color-site-bg: var(--color-slate-900);
+  --color-site-text: var(--color-white);
+  
+  /* Componentes del Chat */
+  --color-chat-bg: var(--color-white);
+  --color-chat-text: var(--color-gray-800);
+  --color-chat-border: var(--color-gray-100);
+}
