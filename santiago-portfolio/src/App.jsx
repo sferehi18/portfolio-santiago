@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './index.css'
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar';
 import ChatBot from './components/ChatBot';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
