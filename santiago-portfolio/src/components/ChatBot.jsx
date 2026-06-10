@@ -24,8 +24,8 @@ const sugerencias = [
     setMessages(prev => [...prev, { text: textToSend, isBot: false }]);
     setLoading(true);
 
-    try {
-      const response = await fetch("https://portfolio-santiago.onrender.com/chat", {
+    try {const API_URL = import.meta.env.VITE_API_URL;
+      const response = await fetch(`${API_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pregunta: textToSend })
