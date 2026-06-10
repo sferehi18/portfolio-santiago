@@ -6,7 +6,7 @@ export default function Hero() {
 <section id="perfil" className="scroll-mt-28 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col justify-center border-b border-slate-900/60">
 
       <p className="text-xs font-semibold tracking-widest uppercase text-indigo-400 mb-4">
-        Buscando nuevos retos con los que emplear mis conocimientos
+        Buscando nuevos retos en los que emplear mis conocimientos
       </p>
       <h1 className="text-4xl md:text-6xl font-medium tracking-tight text-white mb-6">
         Santiago Fernández

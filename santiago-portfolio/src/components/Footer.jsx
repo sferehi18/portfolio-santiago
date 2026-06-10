@@ -7,7 +7,7 @@ export default function Footer() {
         
         {/* Copyright / Identidad izquierda */}
         <div>
-          © {new Date().getFullYear()} santiago<span className="text-slate-400">.ehimatie</span>
+          © {new Date().getFullYear()} santiago<span className="text-slate-400">Fernández Ehimatie</span>
         </div>
 
         {/* Enlaces de contacto y redes derechos */}

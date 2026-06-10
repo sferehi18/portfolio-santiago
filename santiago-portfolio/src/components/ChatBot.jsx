@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { MessageCircle, X } from "lucide-react";
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
@@ -123,12 +123,22 @@ const sugerencias = [
       )}
 
       {/* Botón flotante para abrir/cerrar */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 bg-brand-primary hover:bg-brand-hover text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95 duration-200"
-      >
-        {isOpen ? <span className="text-xl font-bold">✕</span> : <span className="text-2xl">💬</span>}
-      </button>
+      {/* Botón flotante para abrir/cerrar */}
+<button
+  onClick={() => setIsOpen(!isOpen)}
+  className="w-14 h-14 bg-brand-primary hover:bg-brand-hover text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95 duration-200 relative"
+>
+  {isOpen ? (
+    <X className="w-6 h-6" />
+  ) : (
+    <>
+      <MessageCircle className="w-6 h-6" />
+
+      {/* punto online */}
+      <span className="absolute top-3 right-3 w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+    </>
+  )}
+</button>
     </div>
   );
 }
