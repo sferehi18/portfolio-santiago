@@ -43,7 +43,24 @@ class ChatQuery(BaseModel):
     pregunta: str
 
 
+retriever = None
 
+def get_retriever():
+    global retriever
+
+    if retriever is None:
+        loader = TextLoader("contexto.txt", encoding="utf-8")
+        documents = loader.load()
+
+        text_splitter = CharacterTextSplitter(chunk_size=400, chunk_overlap=40)
+        docs = text_splitter.split_documents(documents)
+
+        embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+        vector_store = FAISS.from_documents(docs, embeddings)
+
+        retriever = vector_store.as_retriever(search_kwargs={"k": 3})
+
+    return retriever
 # LOAD RAG (FUNCIÓN LAZY -> EVITA BLOQUEOS EN STARTUP)
 
 def build_rag():
@@ -51,7 +68,8 @@ def build_rag():
     loader = TextLoader("contexto.txt", encoding="utf-8")
     documents = loader.load()
 
-    text_splitter = CharacterTextSplitter(chunk_size=400, chunk_overlap=40)
+    text_splitter = CharacterTextSplitter( chunk_size=800,
+    chunk_overlap=100)
     docs = text_splitter.split_documents(documents)
 
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
@@ -113,7 +131,13 @@ rag_chain = create_retrieval_chain(retriever, question_answer_chain)
 @app.post("/chat")
 async def chat_endpoint(query: ChatQuery):
     try:
+        rag_chain = create_retrieval_chain(
+            get_retriever(),
+            question_answer_chain
+        )
+
         result = rag_chain.invoke({"input": query.pregunta})
         return {"respuesta": result["answer"]}
+
     except Exception as e:
-        return {"respuesta": f"Error: {str(e)}"}
+        return {"respuesta": str(e)}
