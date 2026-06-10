@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-   // Cambia la etiqueta de inicio por esta:
+   // Sección de presentación
 <section id="perfil" className="scroll-mt-28 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col justify-center border-b border-slate-900/60">
 
       <p className="text-xs font-semibold tracking-widest uppercase text-indigo-400 mb-4">
@@ -26,17 +26,13 @@ export default function Hero() {
 >
   Contacto directo
 </a>
+  
+        <a href="mailto:Sferehi18@gmail.com" target="_blank" rel="noreferrer" className="border border-slate-800 hover:border-slate-600 text-slate-300 px-6 py-3 rounded-lg transition-all duration-200">
+         Email
+        </a>
+        
 
-        <a href="https://github.com/sferehi18" target="_blank" rel="noreferrer" className="border border-slate-800 hover:border-slate-600 text-slate-300 px-6 py-3 rounded-lg transition-all duration-200">
-          GitHub
-        </a>
-         {/* EMAIL BUTTON */}
-        <a 
-          href="mailto:Sferehi18@gmail.com"
-          className="border border-indigo-500 text-indigo-300 hover:bg-indigo-500 hover:text-white px-6 py-3 rounded-lg transition-all duration-200"
-        >
-          Email
-        </a>
+        
       </div>
     </section>
   );

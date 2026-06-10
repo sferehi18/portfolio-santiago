@@ -7,7 +7,7 @@ export default function NavBar() {
         
         {/* Identidad / Logo izquierdo actualizado */}
         <div className="text-sm font-semibold tracking-wider text-white select-none">
-          Santiago<span className="text-indigo-400">.ehimatie</span>
+          Santiago<span className="text-indigo-400">.Ehimatie</span>
         </div>
 
         {/* Enlaces de navegación derechos */}
@@ -27,6 +27,13 @@ export default function NavBar() {
         </div>
 
       </div>
+      <a
+  href="santiago-portfolio\public\CV_Santiago_FE.pdf"
+  download
+  className="text-xs font-medium tracking-widest uppercase text-indigo-400 hover:text-white transition-colors"
+>
+  CV
+</a>
     </nav>
   );
 }
