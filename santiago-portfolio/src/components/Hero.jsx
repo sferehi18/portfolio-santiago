@@ -6,7 +6,7 @@ export default function Hero() {
 <section id="perfil" className="scroll-mt-28 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col justify-center border-b border-slate-900/60">
 
       <p className="text-xs font-semibold tracking-widest uppercase text-indigo-400 mb-4">
-        Disponible para incorporación inmediata
+        Buscando nuevos retos con los que emplear mis conocimientos
       </p>
       <h1 className="text-4xl md:text-6xl font-medium tracking-tight text-white mb-6">
         Santiago Fernández
@@ -15,7 +15,7 @@ export default function Hero() {
         Desarrollador <span className="text-slate-200 font-normal">Full Stack Junior</span> especializado en <span className="text-indigo-300 font-normal">IA & Big Data</span>
       </h2>
       <p className="text-slate-400 text-sm max-w-2xl leading-relaxed font-light mb-10">
-        Técnico Superior en DAW con especialización en Inteligencia Artificial. Experiencia práctica en entorno un entorno corporativo aplicando el ecosistema Java (Spring Boot), React. Así como en mi etapa de formación utilizando Python para análisis de datos y n8n para la automatización de procesos.
+        Técnico Superior en DAW con especialización en Inteligencia Artificial. Experiencia práctica en entorno un entorno corporativo aplicando el ecosistema Java (Spring Boot), React, Python para análisis de datos y n8n para la automatización de procesos.
       </p>
       <div className="flex gap-6 text-xs font-medium tracking-widest uppercase">
       <a 
@@ -29,6 +29,13 @@ export default function Hero() {
 
         <a href="https://github.com/sferehi18" target="_blank" rel="noreferrer" className="border border-slate-800 hover:border-slate-600 text-slate-300 px-6 py-3 rounded-lg transition-all duration-200">
           GitHub
+        </a>
+         {/* EMAIL BUTTON */}
+        <a 
+          href="mailto:Sferehi18@gmail.com"
+          className="border border-indigo-500 text-indigo-300 hover:bg-indigo-500 hover:text-white px-6 py-3 rounded-lg transition-all duration-200"
+        >
+          Email
         </a>
       </div>
     </section>
