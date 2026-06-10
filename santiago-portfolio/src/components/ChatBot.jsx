@@ -24,7 +24,7 @@ export default function ChatBot() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://portfolio-santiago.onrender.com:10000/chat", {
+      const response = await fetch("https://portfolio-santiago.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pregunta: textToSend })
