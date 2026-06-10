@@ -27,7 +27,7 @@ export default function Hero() {
   Contacto directo
 </a>
 
-        <a href="https://github.com" target="_blank" rel="noreferrer" className="border border-slate-800 hover:border-slate-600 text-slate-300 px-6 py-3 rounded-lg transition-all duration-200">
+        <a href="https://github.com/sferehi18" target="_blank" rel="noreferrer" className="border border-slate-800 hover:border-slate-600 text-slate-300 px-6 py-3 rounded-lg transition-all duration-200">
           GitHub
         </a>
       </div>
