@@ -13,10 +13,7 @@ const sugerencias = [
   "¿Cuáles son los proyectos principales de Santiago?",
   "¿Como es la personalidad de Santiago?",
   "¿En qué destaca Santiago como desarrollador?",
-  "¿Qué tecnologías domina Santiago?",
   "¿Cuál es la experiencia laboral de Santiago?",
-  "¿Cómo se puede contactar con Santiago?",
-  "¿Qué formación académica tiene Santiago?",
   "¿Tiene experiencia en Inteligencia Artificial Santiago?",
 ];
 
