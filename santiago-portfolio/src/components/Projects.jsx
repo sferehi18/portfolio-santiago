@@ -2,15 +2,18 @@ import React from 'react';
 
 export default function Projects() {
   return (
-    <section id="proyectos" className="py-24 md:py-32 border-b border-slate-900/60">
-      <h3 className="text-xs font-bold tracking-widest uppercase text-slate-500 mb-16">
+    <section
+      id="proyectos"
+      className="py-24 md:py-32 border-b border-slate-900/60"
+    >
+      <h3 className="reveal text-xs font-bold tracking-widest uppercase text-slate-500 mb-16">
         Proyectos Destacados
       </h3>
-      
+
       <div className="space-y-24">
 
         {/* Proyecto 1 */}
-        <div className="group flex flex-col md:flex-row justify-between items-start gap-8">
+        <div className="reveal reveal-delay-1 group flex flex-col md:flex-row justify-between items-start gap-8">
           <div className="max-w-md">
             <h4 className="text-lg font-medium text-white mb-3 group-hover:text-indigo-400 transition-colors duration-200">
               Football Predictor (Machine Learning & Big Data)
@@ -22,13 +25,19 @@ export default function Projects() {
               Modelo predictivo enfocado al análisis y pronóstico de resultados de fútbol basado en datos históricos. Implementación de procesos ETL, limpieza y transformación de datos, entrenamiento de modelos de Machine Learning y optimización de precisión mediante ajuste de hiperparámetros.
             </p>
           </div>
-          <a href="https://github.com/sferehi18/Football-predictor-TFG" target="_blank" rel="noreferrer" className="text-xs font-medium tracking-widest uppercase text-slate-500 hover:text-white border-b border-slate-800 hover:border-white pb-1 transition-all duration-200 shrink-0">
+
+          <a
+            href="https://github.com/sferehi18/Football-predictor-TFG"
+            target="_blank"
+            rel="noreferrer"
+            className="text-xs font-medium tracking-widest uppercase text-slate-500 hover:text-white border-b border-slate-800 hover:border-white pb-1 transition-all duration-200 shrink-0"
+          >
             Ver Código
           </a>
         </div>
 
         {/* Proyecto 2 */}
-        <div className="group flex flex-col md:flex-row justify-between items-start gap-8">
+        <div className="reveal reveal-delay-2 group flex flex-col md:flex-row justify-between items-start gap-8">
           <div className="max-w-md">
             <h4 className="text-lg font-medium text-white mb-3 group-hover:text-indigo-400 transition-colors duration-200">
               Plataforma de Gestión de Contenidos Educativos
@@ -40,7 +49,13 @@ export default function Projects() {
               Arquitectura desacoplada para la gestión jerárquica de material didáctico. Integración de seguridad robusta mediante JSON Web Tokens (JWT) para la protección de accesos, junto con una base de datos relacional optimizada para consultas y almacenamiento eficiente.
             </p>
           </div>
-          <a href="https://github.com/sferehi18/study-app" target="_blank" rel="noreferrer" className="text-xs font-medium tracking-widest uppercase text-slate-500 hover:text-white border-b border-slate-800 hover:border-white pb-1 transition-all duration-200 shrink-0">
+
+          <a
+            href="https://github.com/sferehi18/study-app"
+            target="_blank"
+            rel="noreferrer"
+            className="text-xs font-medium tracking-widest uppercase text-slate-500 hover:text-white border-b border-slate-800 hover:border-white pb-1 transition-all duration-200 shrink-0"
+          >
             Ver Código
           </a>
         </div>
