@@ -9,12 +9,16 @@ export default function ChatBot() {
   const [loading, setLoading] = useState(false);
 
   // 1. Definimos las preguntas recomendadas/base
-  const sugerencias = [
-    "¿Cuáles son tus proyectos principales?",
-    "¿Qué tecnologías dominas?",
-    "¿Cuál es tu experiencia laboral?",
-    "¿Cómo puedo contactarte?"
-  ];
+const sugerencias = [
+  "¿Cuáles son los proyectos principales de Santiago?",
+  "¿Como es la personalidad de Santiago?",
+  "¿En qué destaca Santiago como desarrollador?",
+  "¿Qué tecnologías domina Santiago?",
+  "¿Cuál es la experiencia laboral de Santiago?",
+  "¿Cómo se puede contactar con Santiago?",
+  "¿Qué formación académica tiene Santiago?",
+  "¿Tiene experiencia en Inteligencia Artificial Santiago?",
+];
 
   // 2. Lógica centralizada para enviar mensajes (reutilizable)
   const sendMessage = async (textToSend) => {
