@@ -12,4 +12,4 @@ torch
 
 faiss-cpu
 
-pydantic==2.9.2
+pydantic
