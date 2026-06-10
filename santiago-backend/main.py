@@ -29,91 +29,49 @@ app.add_middleware(
 
 
 # ======================
-# HEALTH CHECK (CRÍTICO EN RENDER)
+# HEALTH CHECK (RENDER OBLIGATORIO)
 # ======================
 @app.get("/")
 def root():
     return {"status": "ok"}
 
 
-
-# REQUEST MODEL
-
+# ======================
+# MODEL
+# ======================
 class ChatQuery(BaseModel):
     pregunta: str
 
 
-retriever = None
-
-def get_retriever():
-    global retriever
-
-    if retriever is None:
-        loader = TextLoader("contexto.txt", encoding="utf-8")
-        documents = loader.load()
-
-        text_splitter = CharacterTextSplitter(chunk_size=400, chunk_overlap=40)
-        docs = text_splitter.split_documents(documents)
-
-        embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-        vector_store = FAISS.from_documents(docs, embeddings)
-
-        retriever = vector_store.as_retriever(search_kwargs={"k": 3})
-
-    return retriever
-# LOAD RAG (FUNCIÓN LAZY -> EVITA BLOQUEOS EN STARTUP)
-
-def build_rag():
-
-    loader = TextLoader("contexto.txt", encoding="utf-8")
-    documents = loader.load()
-
-    text_splitter = CharacterTextSplitter( chunk_size=800,
-    chunk_overlap=100)
-    docs = text_splitter.split_documents(documents)
-
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-    vector_store = FAISS.from_documents(docs, embeddings)
-
-    return vector_store.as_retriever(search_kwargs={"k": 3})
-
-
-retriever = build_rag()
-
-
-# LLM
-
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
+# ======================
+# LLM (ligero)
+# ======================
 llm = ChatGroq(
     model_name="llama-3.1-8b-instant",
     temperature=0.2,
-    api_key=GROQ_API_KEY
+    api_key=os.getenv("GROQ_API_KEY")
 )
 
 
-
+# ======================
 # PROMPT
-
+# ======================
 system_prompt = """
 Eres Santiago IA, el asistente virtual oficial de Santiago Fernández Ehimatie.
 
-Tu objetivo es responder de forma natural, fluida y profesional sobre su perfil.
+Responde de forma natural, clara y profesional.
 
 REGLAS:
-- Responde siempre en español.
-- Habla de forma natural.
-- Usa el contexto como base.
-- No inventes información.
-- No menciones "contexto" ni "documentos".
+- Español siempre
+- No inventes información
+- No menciones "contexto" ni "documentos"
 
-Si no hay información:
-responde de forma natural y ofrece el correo: Sferehi18@gmail.com.
+Si falta info:
+responde de forma natural y da el correo: Sferehi18@gmail.com
 
 CONTEXTO:
 {context}
 """
-
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
@@ -121,22 +79,57 @@ prompt = ChatPromptTemplate.from_messages([
 ])
 
 
-question_answer_chain = create_stuff_documents_chain(llm, prompt)
-rag_chain = create_retrieval_chain(retriever, question_answer_chain)
+# ======================
+# GLOBALS (IMPORTANTE: SOLO 1 VEZ)
+# ======================
+retriever = None
+rag_chain = None
 
 
+def build_retriever():
+    global retriever
 
+    if retriever is None:
+        loader = TextLoader("contexto.txt", encoding="utf-8")
+        documents = loader.load()
+
+        text_splitter = CharacterTextSplitter(
+            chunk_size=800,
+            chunk_overlap=100
+        )
+        docs = text_splitter.split_documents(documents)
+
+        embeddings = HuggingFaceEmbeddings(
+            model_name="all-MiniLM-L6-v2"
+        )
+
+        vector_store = FAISS.from_documents(docs, embeddings)
+        retriever = vector_store.as_retriever(search_kwargs={"k": 3})
+
+    return retriever
+
+
+def build_chain():
+    global rag_chain
+
+    if rag_chain is None:
+        rag_chain = create_stuff_documents_chain(llm, prompt)
+
+    return rag_chain
+
+
+# ======================
 # ENDPOINT
-
+# ======================
 @app.post("/chat")
 async def chat_endpoint(query: ChatQuery):
     try:
-        rag_chain = create_retrieval_chain(
-            get_retriever(),
-            question_answer_chain
-        )
+        retriever_obj = build_retriever()
+        chain = build_chain()
 
-        result = rag_chain.invoke({"input": query.pregunta})
+        rag = create_retrieval_chain(retriever_obj, chain)
+
+        result = rag.invoke({"input": query.pregunta})
         return {"respuesta": result["answer"]}
 
     except Exception as e:
