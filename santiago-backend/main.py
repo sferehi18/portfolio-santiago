@@ -25,7 +25,7 @@ import os
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 llm = ChatGroq(
-    model_name="llama-3.3-70b-versatile",
+    model_name="llama-3.1-8b-instant",
     temperature=0.2
 )
 loader = TextLoader("contexto.txt", encoding="utf-8")
