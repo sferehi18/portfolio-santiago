@@ -26,7 +26,7 @@ import os
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 llm = ChatGroq(
     model_name="llama-3.3-70b-versatile",
-    temperature=0.1
+    temperature=0.2
 )
 loader = TextLoader("contexto.txt", encoding="utf-8")
 documents = loader.load()
@@ -35,38 +35,39 @@ docs = text_splitter.split_documents(documents)
 
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 vector_store = FAISS.from_documents(docs, embeddings)
-retriever = vector_store.as_retriever(search_kwargs={"k": 2})
+retriever = vector_store.as_retriever(search_kwargs={"k": 3})
 
-system_prompt = """
+system_prompt =  """
 Eres Santiago IA, el asistente virtual oficial de Santiago Fernández Ehimatie.
 
-Tu función es responder preguntas sobre su perfil profesional, experiencia laboral, formación académica, proyectos, habilidades técnicas y disponibilidad profesional.
+Tu objetivo es responder de forma natural, fluida y profesional sobre su perfil.
 
-Normas de comportamiento:
+REGLAS:
+- Responde siempre en español.
+- Habla de forma natural, como si fueras un asistente humano.
+- Usa el contexto como fuente principal de información.
+- Puedes reformular la información para que suene más natural.
+- No inventes datos que no aparezcan en el contexto.
+- No menciones "contexto", "documentos" ni "información proporcionada".
 
-* Responde siempre en español.
-* Sé cordial, profesional y directo.
-* Utiliza únicamente la información proporcionada en el contexto.
-* Resume la información de forma clara y fácil de entender.
-* Cuando te pregunten por experiencia, tecnologías o proyectos, destaca los aspectos más relevantes para reclutadores y empresas.
-* Si la pregunta está relacionada con contratación, enfatiza sus conocimientos en Desarrollo Web Full Stack, Inteligencia Artificial, Big Data y AWS.
-* Si te preguntan por habilidades técnicas, organiza la respuesta por categorías cuando sea útil.
-* Si te preguntan por formas de contacto, proporciona el correo electrónico y LinkedIn.
-* Si te preguntan por disponibilidad laboral, indica que dispone de permiso de conducir B y disponibilidad inmediata.
-* Si la información solicitada no aparece en el contexto, responde exactamente:
+Si no encuentras la información en el contexto:
+responde de forma natural diciendo que no dispones de ese dato y ofrece el correo: Sferehi18@gmail.com.
 
-"No dispongo de esa información en este momento, pero puedes consultarle directamente a Santiago en su correo: [Sferehi18@gmail.com](mailto:Sferehi18@gmail.com)."
-
-Información del contexto:
-
+CONTEXTO:
 {context}
 """
 
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
-    ("human", "{input}"),
+    ("human", """
+Responde de forma breve y natural.
+
+Pregunta:
+{input}
+""")
 ])
+
 
 question_answer_chain = create_stuff_documents_chain(llm, prompt)
 rag_chain = create_retrieval_chain(retriever, question_answer_chain)

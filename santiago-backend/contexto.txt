@@ -1,140 +1,76 @@
-Objetivo profesional:
-Santiago Fernández Ehimatie busca oportunidades como Desarrollador Full Stack, Desarrollador Backend, Ingeniero de Software Junior o Especialista Junior en Inteligencia Artificial y Big Data.
+======================================================================
+CONTEXTO OPTIMIZADO PARA AGENTE RAG: PERFIL DE SANTIAGO FERNÁNDEZ EHIMATIE
+======================================================================
 
-Fortalezas principales:
+[PERFIL PROFESIONAL]
+* Nombre Completo: Santiago Fernández Ehimatie
+* Rol Principal: Desarrollador Full Stack & Especialista en Inteligencia Artificial y Big Data
+* Ubicación: Algeciras (Cádiz), España
+* Contacto: Sferehi18@gmail.com | +34 647917845
+* LinkedIn: https://www.linkedin.com/in/santiago-fernandez-ehimatie/
+* GitHub: https://github.com/sferehi18
+* Resumen: Técnico Superior en Desarrollo de Aplicaciones Web (DAW) con especialización de postgrado en Inteligencia Artificial y Big Data. Posee experiencia práctica en arquitecturas robustas tanto en frontend (React) como en backend (Java Spring Boot, PHP Laravel), así como en el manejo del ecosistema AWS y automatización de procesos. Apasionado por las soluciones basadas en datos, la optimización de código y la creación de aplicaciones web inteligentes.
 
-* Desarrollo Full Stack con Java Spring Boot y React.
-* Desarrollo de APIs REST.
-* Diseño y gestión de bases de datos relacionales.
-* Inteligencia Artificial y Machine Learning.
-* Automatización de procesos con Python y n8n.
-* Cloud Computing con AWS.
-* Trabajo colaborativo mediante Git y GitHub.
-* Capacidad de aprendizaje rápido y adaptación tecnológica.
+----------------------------------------------------------------------
+[COMPETENCIAS TÉCNICAS PRINCIPALES]
+* Backend & Frameworks: Java, Spring Boot, PHP, Laravel, C++, Python.
+* Frontend & Web: JavaScript, React.js, HTML5, CSS3, Blade.
+* IA, Datos & Automatización: Machine Learning, Big Data, Pandas, Scikit-learn, R, n8n, Jupyter Notebook.
+* Cloud & DevOps: Amazon Web Services (AWS), Git, GitHub.
+* Bases de Datos: MySQL, PostgreSQL.
+* Seguridad & Protocolos: JWT (JSON Web Tokens), APIs REST.
 
-Tecnologías destacadas:
-Java, Spring Boot, React, JavaScript, Python, PHP, Laravel, MySQL, PostgreSQL, AWS, Git, GitHub, JWT, HTML5, CSS3.
+----------------------------------------------------------------------
+[EXPERIENCIA LABORAL]
 
-Idiomas:
+EMPRESA: Baleària
+* Puesto: Desarrollador Web (Prácticas)
+* Periodo: Marzo 2025 – Junio 2025
+* Descripción del Rol: Desarrollo y optimización de funcionalidades de software en un entorno corporativo real, aplicando arquitecturas desacopladas y metodologías de control de versiones.
+* Logros y Responsabilidades Clave:
+  - Desarrolló y optimizó funcionalidades del frontend utilizando React.js.
+  - Diseñó e implementó servicios en el backend mediante Java (Spring Boot) y PHP (Laravel).
+  - Colaboró activamente en el diseño, modelado e integración de bases de datos relacionales, asegurando la consistencia y la eficiencia en la consulta de datos.
+  - Identificó y resolvió incidencias de software mediante tareas de depuración (debugging), incrementando la estabilidad de las aplicaciones corporativas.
+  - Participó en flujos de trabajo colaborativos utilizando control de versiones con Git y GitHub.
 
-* Español: Nativo.
-* Inglés: Intermedio/Avanzado.
+----------------------------------------------------------------------
+[PROYECTOS DESTACADOS]
 
-Disponibilidad:
+PROYECTO 1: Football Predictor (Machine Learning & Big Data)
+* Tecnologías: Python, Pandas, Scikit-learn, Redes Neuronales.
+* Descripción: Modelo predictivo enfocado al análisis y pronóstico de resultados de fútbol basado en datos históricos.
+* Logros y Funciones:
+  - Implementó procesos ETL (Extracción, Transformación y Carga) para la limpieza y normalización de grandes volúmenes de datos deportivos.
+  - Utilizó la librería Pandas para el preprocesamiento avanzado de la información.
+  - Entrenó y evaluó un modelo de Red Neuronal utilizando la librería Scikit-learn.
+  - Optimizó la precisión del modelo predictivo mediante la selección de características clave y el ajuste de hiperparámetros.
 
-* Incorporación inmediata.
-* Permiso de conducir B.
-* Residencia en Algeciras (Cádiz).
-Santiago Fernández Ehimatie es un desarrollador Full Stack Junior especializado en Inteligencia Artificial y Big Data. Reside en Algeciras (Cádiz) y cuenta con disponibilidad inmediata para incorporarse a proyectos tecnológicos.
+PROYECTO 2: Plataforma Web de Gestión de Contenidos Educativos
+* Tecnologías: Java (Spring Boot), React.js, JWT, MySQL, API REST.
+* Descripción: Plataforma con arquitectura Full Stack desacoplada orientada a la gestión jerárquica de recursos didácticos (Asignaturas, Temas y Archivos).
+* Logros y Funciones:
+  - Diseñó e implementó la arquitectura desacoplada conectando el frontend en React con el backend en Spring Boot.
+  - Desarrolló un sistema de autenticación y autorización seguro en el backend utilizando JWT (JSON Web Tokens) para proteger rutas y endpoints de la API.
+  - Modeló la base de datos relacional en MySQL definiendo reglas de integridad y optimizando el almacenamiento y la subida de archivos adjuntos.
+  - Construyó una interfaz de usuario fluida y dinámica en React facilitando operaciones CRUD completas.
 
-Perfil profesional:
+----------------------------------------------------------------------
+[FORMACIÓN ACADÉMICA]
+* Curso de Especialización en Inteligencia Artificial y Big Data (Postgrado)
+  - Institución: IES Zaidín Vergeles | Año: 2026
+* Técnico Superior en Desarrollo de Aplicaciones Web (DAW)
+  - Institución: IES Kursaal | Año: 2025
+* Bachillerato Tecnológico
+  - Institución: IES Isla Verde | Año: 2022
 
-Está especializado en el desarrollo de aplicaciones web modernas utilizando arquitecturas Full Stack. Posee experiencia práctica desarrollando frontend con React y backend con Java Spring Boot, PHP Laravel y Python.
+----------------------------------------------------------------------
+[IDIOMAS Y HABILIDADES BLANDAS]
+* Idiomas: Español (Nativo) | Inglés (Intermedio / Avanzado).
+* Habilidades Blandas (Soft Skills): Perseverancia, asertividad, paciencia, alta capacidad de adaptación tecnológica, resolución de problemas complejos, capacidad analítica, orientación a resultados y trabajo en equipo.
 
-Su principal interés profesional se centra en:
-
-* Desarrollo Backend.
-* Desarrollo Full Stack.
-* Inteligencia Artificial.
-* Machine Learning.
-* Big Data.
-* Automatización de procesos.
-* Cloud Computing con AWS.
-
-Experiencia profesional:
-
-Desarrollador Web en prácticas en Baleària (03/2025 - 06/2025)
-
-Responsabilidades principales:
-
-* Desarrollo y mantenimiento de aplicaciones corporativas.
-* Implementación de nuevas funcionalidades frontend en React.
-* Desarrollo de servicios backend con Spring Boot y Laravel.
-* Integración y optimización de bases de datos relacionales.
-* Resolución de incidencias mediante debugging.
-* Trabajo colaborativo mediante Git y GitHub.
-
-Tecnologías principales:
-
-Backend:
-
-* Java
-* Spring Boot
-* PHP
-* Laravel
-* Python
-* C++
-
-Frontend:
-
-* React.js
-* JavaScript
-* HTML5
-* CSS3
-
-Bases de datos:
-
-* MySQL
-* PostgreSQL
-
-Cloud y DevOps:
-
-* AWS
-* Git
-* GitHub
-
-Inteligencia Artificial y Datos:
-
-* Python
-* Machine Learning
-* Big Data
-* Jupyter Notebook
-* R
-* n8n
-
-Proyecto destacado:
-
-Plataforma de gestión de contenidos educativos.
-
-Objetivo:
-Gestionar asignaturas, temas y recursos educativos mediante una arquitectura Full Stack.
-
-Tecnologías:
-
-* Java Spring Boot
-* React.js
-* JWT
-* MySQL
-
-Funciones:
-
-* Autenticación segura mediante JWT.
-* Operaciones CRUD completas.
-* Gestión de archivos.
-* API REST.
-* Base de datos relacional.
-
-Fortalezas profesionales:
-
-* Aprendizaje rápido.
-* Adaptación a nuevas tecnologías.
-* Resolución de problemas.
-* Trabajo en equipo.
-* Capacidad analítica.
-* Orientación a resultados.
-
-Idiomas:
-
-* Español: Nativo.
-* Inglés: Intermedio/Avanzado.
-
-Disponibilidad:
-
-* Incorporación inmediata.
-* Permiso de conducir B.
-
-Contacto:
-
-Correo: [Sferehi18@gmail.com](mailto:Sferehi18@gmail.com)
-GitHub: github.com/Sferehi18
-LinkedIn: linkedin.com/in/Sferehi18
+----------------------------------------------------------------------
+[PREGUNTAS FRECUENTES PARA EL AGENTE]
+* ¿Cuál es el objetivo profesional de Santiago?: Busca oportunidades como Desarrollador Full Stack, Desarrollador Backend, Ingeniero de Software Junior o Especialista Junior en Inteligencia Artificial y Big Data.
+* ¿Tiene disponibilidad horaria y geográfica?: Su disponibilidad para incorporarse a proyectos tecnológicos es inmediata. Reside en Algeciras (Cádiz) y cuenta con permiso de conducir B.
+* ¿Cuáles son sus principales fortalezas técnicas?: Destaca en el desarrollo Full Stack usando Java Spring Boot y React, el diseño de APIs REST, la creación de pipelines de automatización con Python y n8n, el análisis de datos/ML, y el despliegue básico en Cloud con AWS.
